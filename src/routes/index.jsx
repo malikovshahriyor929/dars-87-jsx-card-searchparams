@@ -1,6 +1,7 @@
+import React  from "react";
 import { createBrowserRouter } from "react-router-dom";
-import Card from "../components/card";
-import Filter from "../components/filter";
+let  Card = React.lazy(() => import("../components/card"));
+let Filter = React.lazy(() => import( "../components/filter"));
 
 export let Rootes = createBrowserRouter([
   {
